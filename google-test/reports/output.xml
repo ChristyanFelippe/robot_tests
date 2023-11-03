@@ -1,32 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.6 on win32)" generated="20231103 14:17:10.476" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.6 on win32)" generated="20231103 16:17:19.695" rpa="false" schemaversion="4">
 <suite id="s1" name="Google Search Test" source="C:\Users\chris\OneDrive\Área de Trabalho\intelbras\develop\git\robot_tests\google-test\google_search_test.robot">
 <test id="s1-t1" name="Cenário: Previsão do tempo em Florianópolis" line="5">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>value=0.2</arg>
+<arg>value=0.1</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20231103 14:17:10.652" endtime="20231103 14:17:10.652"/>
+<status status="PASS" starttime="20231103 16:17:19.893" endtime="20231103 16:17:19.894"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>http://www.google.com.br/</arg>
-<arg>chrome</arg>
+<arg>url=http://www.google.com.br/</arg>
+<arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231103 14:17:10.653" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com.br/'.</msg>
-<status status="PASS" starttime="20231103 14:17:10.652" endtime="20231103 14:17:13.326"/>
+<msg timestamp="20231103 16:17:19.894" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com.br/'.</msg>
+<status status="PASS" starttime="20231103 16:17:19.894" endtime="20231103 16:17:22.271"/>
 </kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=http://www.uol.com.br/</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231103 14:17:13.327" level="INFO">Opening url 'http://www.uol.com.br/'</msg>
-<status status="PASS" starttime="20231103 14:17:13.326" endtime="20231103 14:17:15.868"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=q</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231103 16:17:22.272" level="INFO">Clicking element 'name=q'.</msg>
+<status status="PASS" starttime="20231103 16:17:22.271" endtime="20231103 16:17:22.553"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>Previsão do tempo em Biguaçu/SC</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231103 16:17:22.555" level="INFO">Typing text 'Previsão do tempo em Biguaçu/SC' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20231103 16:17:22.554" endtime="20231103 16:17:23.031"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=btnK</arg>
+<arg>modifier=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231103 16:17:23.032" level="INFO">Clicking element 'name=btnK'.</msg>
+<status status="PASS" starttime="20231103 16:17:23.031" endtime="20231103 16:17:23.434"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231103 16:17:28.436" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231103 16:17:23.435" endtime="20231103 16:17:28.436"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231103 14:17:15.868" endtime="20231103 14:17:18.348"/>
+<status status="PASS" starttime="20231103 16:17:28.436" endtime="20231103 16:17:30.659"/>
 </kw>
-<status status="PASS" starttime="20231103 14:17:10.651" endtime="20231103 14:17:18.348"/>
+<status status="PASS" starttime="20231103 16:17:19.893" endtime="20231103 16:17:30.660"/>
 </test>
-<status status="PASS" starttime="20231103 14:17:10.478" endtime="20231103 14:17:18.350"/>
+<status status="PASS" starttime="20231103 16:17:19.698" endtime="20231103 16:17:30.661"/>
 </suite>
 <statistics>
 <total>
