@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.6 on win32)" generated="20231114 16:52:33.451" rpa="false" schemaversion="4">
+<suite id="s1" name="Login" source="C:\Users\chris\OneDrive\Área de Trabalho\intelbras\develop\git\robot_tests\bookstore\Login.robot">
+<test id="s1-t1" name="Cenário: Sucess sign in as Natural Person" line="11">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>value=0.1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231114 16:52:33.649" endtime="20231114 16:52:33.649"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=http://localhost:5173/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231114 16:52:33.650" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173/'.</msg>
+<status status="PASS" starttime="20231114 16:52:33.649" endtime="20231114 16:52:35.958"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231114 16:52:35.958" endtime="20231114 16:52:36.184"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Minha conta</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20231114 16:52:36.186" level="INFO">Clicking link 'Minha conta'.</msg>
+<status status="PASS" starttime="20231114 16:52:36.185" endtime="20231114 16:52:36.589"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=name</arg>
+<arg>Christyan Felippe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231114 16:52:36.590" level="INFO">Typing text 'Christyan Felippe' into text field 'name=name'.</msg>
+<status status="PASS" starttime="20231114 16:52:36.589" endtime="20231114 16:52:37.037"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231114 16:52:41.037" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231114 16:52:37.037" endtime="20231114 16:52:41.037"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231114 16:52:41.037" endtime="20231114 16:52:43.246"/>
+</kw>
+<status status="PASS" starttime="20231114 16:52:33.648" endtime="20231114 16:52:43.248"/>
+</test>
+<doc>Como cliente da loja virtual, desejo criar um
+cadastro no sistema para poder visualizar meus
+pedidos e lista de desejos</doc>
+<status status="PASS" starttime="20231114 16:52:33.454" endtime="20231114 16:52:43.251"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
